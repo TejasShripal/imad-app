@@ -5,7 +5,7 @@ button.onclick =function() {
 var request=new XMLHttpRequest();
 //capturing the request
 request.onreadystatechange=function() {
-  if(request.readyState = XMLHttpRequest.DONE) {
+  if(request.readyState == XMLHttpRequest.DONE) {
       if(request.readystate===200) {
       var counter=request.responseText;
       var span=document.getElementById('count');
